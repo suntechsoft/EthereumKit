@@ -33,10 +33,8 @@ extension RequestType {
         } else {
             paramsString = "no parameters"
         }
-        return """
-        Sending request to \(path) by \(method) method with \(paramsString)
-        """
-    }
+        return "Sending request to \(baseURL) by \(method) method with \(paramsString)"
+	}
 }
 
 extension RequestType {
